@@ -1,13 +1,13 @@
 # Tomcat
 This contains Tomcat Installation and Configuration on Linux RedHat Server
 
-# Step 1: Pre-requisites of the installation
+### Step 1: Pre-requisites of the installation
 #1 EC2 Instance: Create RedHat Server on AWS with minimum of t2-micro. Tomcat is light weight and it can take that.
 #2 Apache Tomcat requires Java to be install:
      .. $ sudo yum install java-1.8.0-openjdk-devel -y
  Confirm Java has been installed with:
      ..$ java -version
- # Step 2: Tomcat Installation
+ ### Step 2: Tomcat Installation
  
  sudo yum install wget zip unzip -y
  
@@ -25,7 +25,7 @@ sudo rm -rf apache-tomcat-9.0.73.zip
 
 sudo mv apache-tomcat-9.0.73 tomcat9
 
-# Step 3: Give executing permissions to tomcat
+### Step 3: Give executing permissions to tomcat
 #This is to allow catalina.sh, startup.sh and shutdown.sh and many more important functions to work or you can give the permission singly.
 
 chmod +x /opt/tomcat9
@@ -38,7 +38,7 @@ chmod 777 -R /opt/tomcat9
 sudo ln -s /opt/tomcat9/bin/startup.sh /usr/local/bin/tomcatup
 ln -s /opt/tomcat9/bin/shutdown.sh /usr/local/bin/tomcatdown
 
-# Step 4: Start Tomcat
+### Step 4: Start Tomcat
 #Start Tomcat as below provided you established the link creation else run the second to start Tomcat since bin directory has the right permission.
 
 tomcatup
@@ -68,7 +68,7 @@ sudo vi /opt/tomcat9/webapps/manager/META-INF/context.xml
   <Valve className="org.apache.catalina.valves.RemoteAddrValve"
          allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
 
-# Step 5: Configure Users
+### Step 5: Configure Users
 #The last straw on this is to update users information from tomcat-users.xml
 sudo vi /opt/tomcat9/conf/tomcat-users.xml
 
@@ -83,7 +83,7 @@ An example is of user setup is below:
  <user username="Manager1" password="manager123" roles="manager-gui, manager-script"/>
  <user username="tomcat" password="s3cret" roles="manager-gui"/>
 
-# Step 6: Run Tomcat on GUI is you 
+### Step 6: Run Tomcat on GUI is you 
 #Restart serivce [you may run tomcatdown and then tomcatup] then login to tomcat application from your browser [http://ip_address:port_Number] and then to the Manager GUI. Ensure you open the assigned Tomcat port in the AWS Tomcat server then you are good to go.
 
 Tomcat should be up and running
