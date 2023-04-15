@@ -162,7 +162,9 @@ Add Markdown synthax to the line below start it with <!-- and end the code block
   <pre><code> <!--
   <Valve className="org.apache.catalina.valves.RemoteAddrValve"
          allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> --> </code></pre>
-  <button onclick="navigator.clipboard.writeText('sudo vi /opt/tomcat9/webapps/manager/META-INF/context.xml')">
+  <button onclick="navigator.clipboard.writeText('<!--
+  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
   </button>
 </div>
