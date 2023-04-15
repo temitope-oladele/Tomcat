@@ -11,13 +11,13 @@ This contains Tomcat Installation and Configuration on Linux RedHart Server
  
  sudo yum install wget zip unzip -y
  
- # Download Tomcat packages to your working home directory and in this case, it opt that we use in our environment
+ #Download Tomcat packages to your working home directory and in this case, it opt that we use in our environment
  
 cd /opt
 
 sudo wget  https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.73/bin/apache-tomcat-9.0.73.zip 
 
-# Extract the zipped directory, remove it and rename the extracted tomcat directory
+#Extract the zipped directory, remove it and rename the extracted tomcat directory
 
 sudo unzip apache-tomcat-9.0.73.zip 
 
@@ -25,19 +25,20 @@ sudo rm -rf apache-tomcat-9.0.73.zip
 
 sudo mv apache-tomcat-9.0.73 tomcat9
 
-# Give executing permissions to tocat9 to allow catalina.sh, startup.sh and shutdown.sh and many more important functions to work or you can give the permission singly.
+# Step 3: Give executing permissions to tocat9 to allow catalina.sh, startup.sh and shutdown.sh and many more important functions to work or you can give the permission singly.
 
 chmod +x /opt/tomcat9
 
-# or if you want to give a full permission you can execute:
+#or if you want to give a full permission you can execute:
 
 chmod 777 -R /opt/tomcat9
 
-# it is important to create a link to manage up and down of the tomcat server. This will note work if the right permission is not given to catalina.sh in the bin directory.
+#it is important to create a link to manage up and down of the tomcat server. This will note work if the right permission is not given to catalina.sh in the bin directory.
 sudo ln -s /opt/tomcat9/bin/startup.sh /usr/local/bin/tomcatup
 ln -s /opt/tomcat9/bin/shutdown.sh /usr/local/bin/tomcatdown
 
-# Start Tomcat as below provided you established the link creation else run the second to start Tomcat since bin directory has the right permission.
+# Step 4: Start Tomcat
+#Start Tomcat as below provided you established the link creation else run the second to start Tomcat since bin directory has the right permission.
 
 tomcatup
 
@@ -45,7 +46,7 @@ or
 
 sh /opt/tomcat9/bin/startup.sh
 
-# The  Tomcat at this point has been fully configured. The default port for Tomcat is 8080 which is the same as Jenkins therefore you may decide to change port here to something else within permissible range something like 8090 and this can be done using the /conf/server.xml 
+#The  Tomcat at this point has been fully configured. The default port for Tomcat is 8080 which is the same as Jenkins therefore you may decide to change port here to something else within permissible range something like 8090 and this can be done using the /conf/server.xml 
 
 use the sudo find / -name <file_name>    to find the ansolute path of the server.xml
 
@@ -66,6 +67,7 @@ sudo vi /opt/tomcat9/webapps/manager/META-INF/context.xml
   <Valve className="org.apache.catalina.valves.RemoteAddrValve"
          allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
 
+# Step 5: Configure Users
 #The last straw on this is to update users information from tomcat-users.xml
 sudo vi /opt/tomcat9/conf/tomcat-users.xml
 
@@ -80,6 +82,7 @@ An example is of user setup is below:
  <user username="Manager1" password="manager123" roles="manager-gui, manager-script"/>
  <user username="tomcat" password="s3cret" roles="manager-gui"/>
 
-# Restart serivce [you may run tomcatdown and then tomcatup] then login to tomcat application from your browser [http://ip_address:port_Number] and then to the Manager GUI. Ensure you open the assigned Tomcat port in the AWS Tomcat server then you are good to go.
+# Step 6: Run Tomcat on GUI is you 
+#Restart serivce [you may run tomcatdown and then tomcatup] then login to tomcat application from your browser [http://ip_address:port_Number] and then to the Manager GUI. Ensure you open the assigned Tomcat port in the AWS Tomcat server then you are good to go.
 
 Tomcat should be up and running
