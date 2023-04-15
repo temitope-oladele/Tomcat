@@ -8,7 +8,6 @@ This contains Tomcat Installation and Configuration on Linux RedHat Server
   <pre><code>sudo yum install java-1.8.0-openjdk-devel -y</code></pre>
   <button onclick="navigator.clipboard.writeText('sudo yum install java-1.8.0-openjdk-devel -y')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
     
@@ -26,7 +25,6 @@ This contains Tomcat Installation and Configuration on Linux RedHat Server
   <pre><code>sudo yum install wget zip unzip -y</code></pre>
   <button onclick="navigator.clipboard.writeText('sudo yum install wget zip unzip -y')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
@@ -37,7 +35,6 @@ Download Tomcat packages to your working home directory and in this case, it opt
   <pre><code>cd /opt</code></pre>
   <button onclick="navigator.clipboard.writeText('cd /opt')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
@@ -45,7 +42,6 @@ Download Tomcat packages to your working home directory and in this case, it opt
   <pre><code>sudo wget  https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.73/bin/apache-tomcat-9.0.73.zip</code></pre>
   <button onclick="navigator.clipboard.writeText('sudo wget  https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.73/bin/apache-tomcat-9.0.73.zip ')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
@@ -55,7 +51,6 @@ Download Tomcat packages to your working home directory and in this case, it opt
   <pre><code>sudo unzip apache-tomcat-9.0.73.zip</code></pre>
   <button onclick="navigator.clipboard.writeText('sudo unzip apache-tomcat-9.0.73.zip')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
@@ -63,7 +58,6 @@ Download Tomcat packages to your working home directory and in this case, it opt
   <pre><code>sudo rm -rf apache-tomcat-9.0.73.zip </code></pre>
   <button onclick="navigator.clipboard.writeText('sudo rm -rf apache-tomcat-9.0.73.zip ')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
@@ -71,7 +65,6 @@ Download Tomcat packages to your working home directory and in this case, it opt
   <pre><code>sudo mv apache-tomcat-9.0.73 tomcat9</code></pre>
   <button onclick="navigator.clipboard.writeText('sudo mv apache-tomcat-9.0.73 tomcat9')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
@@ -82,7 +75,6 @@ Download Tomcat packages to your working home directory and in this case, it opt
   <pre><code>chmod +x /opt/tomcat9</code></pre>
   <button onclick="navigator.clipboard.writeText('chmod +x /opt/tomcat9')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
@@ -93,7 +85,6 @@ or if you want to give a full permission you can execute:
   <pre><code>chmod 777 -R /opt/tomcat9</code></pre>
   <button onclick="navigator.clipboard.writeText('chmod 777 -R /opt/tomcat9')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
@@ -104,7 +95,6 @@ it is important to create a link to manage up and down of the tomcat server. Thi
   <pre><code>sudo ln -s /opt/tomcat9/bin/startup.sh /usr/local/bin/tomcatup</code></pre>
   <button onclick="navigator.clipboard.writeText('sudo ln -s /opt/tomcat9/bin/startup.sh /usr/local/bin/tomcatup')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
@@ -112,7 +102,6 @@ it is important to create a link to manage up and down of the tomcat server. Thi
   <pre><code>ln -s /opt/tomcat9/bin/shutdown.sh /usr/local/bin/tomcatdown</code></pre>
   <button onclick="navigator.clipboard.writeText('ln -s /opt/tomcat9/bin/shutdown.sh /usr/local/bin/tomcatdown')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
@@ -126,7 +115,6 @@ or
   <pre><code>sh /opt/tomcat9/bin/startup.sh</code></pre>
   <button onclick="navigator.clipboard.writeText('sh /opt/tomcat9/bin/startup.sh')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
@@ -139,7 +127,6 @@ use the sudo find / -name <file_name>    to find the ansolute path of the server
   <pre><code>sudo find / -name server.xml</code></pre>
   <button onclick="navigator.clipboard.writeText('sudo find / -name server.xml')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
@@ -151,7 +138,6 @@ use the sudo find / -name <file_name>    to find the ansolute path of the server
   <pre><code>sudo vi /opt/tomcat9/conf/server.xml</code></pre>
   <button onclick="navigator.clipboard.writeText('sudo vi /opt/tomcat9/conf/server.xml')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
@@ -161,7 +147,6 @@ use the sudo find / -name <file_name>    to find the ansolute path of the server
   <pre><code>sudo vi /opt/tomcat9/webapps/manager/META-INF/context.xml</code></pre>
   <button onclick="navigator.clipboard.writeText('sudo vi /opt/tomcat9/webapps/manager/META-INF/context.xml')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
@@ -176,7 +161,6 @@ use the sudo find / -name <file_name>    to find the ansolute path of the server
   <pre><code>sudo vi /opt/tomcat9/conf/tomcat-users.xml</code></pre>
   <button onclick="navigator.clipboard.writeText('sudo vi /opt/tomcat9/conf/tomcat-users.xml')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
 
