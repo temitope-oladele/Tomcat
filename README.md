@@ -1,6 +1,6 @@
 # Tomcat
 This contains Tomcat Installation and Configuration on Linux RedHat Server
----------------------------------------------------------------------------
+
 ### Step 1: Pre-requisites of the installation
 * 1 EC2 Instance: Create RedHat Server on AWS with minimum of t2-micro. Tomcat is light weight and it can take that.
 * 2 Apache Tomcat requires Java to be install:
@@ -18,7 +18,7 @@ This contains Tomcat Installation and Configuration on Linux RedHat Server
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
   </button>
 </div>
- ---------------------------------------------------------------------------------------------------------
+
  ### Step 2: Tomcat Installation
  
   <div>
@@ -67,7 +67,7 @@ Extract the zipped directory, remove it and rename the extracted tomcat director
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
   </button>
 </div>
---------------------------------------------------------------------------------------------------------------------------
+
 ### Step 3: Give executing permissions to tomcat
 This is to allow catalina.sh, startup.sh and shutdown.sh and many more important functions to work or you can give the permission singly.
 
@@ -102,7 +102,7 @@ It is important to create a link to manage up and down of the tomcat server. Thi
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
   </button>
 </div>
--------------------------------------------------------------------------------------------------------------------------------
+
 ### Step 4: Start Tomcat
 Start Tomcat as below provided you established the link creation else run the second to start Tomcat since bin directory has the right permission.
 <div>
@@ -156,8 +156,17 @@ comment the value ClassName field in context file to allow external access to op
 
 Add Markdown synthax to the line below start it with <!-- and end the code block -->
     <Valve className="org.apache.catalina.valves.RemoteAddrValve"
-         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />  
--------------------------------------------------------------------------------------------------------------------------
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> 
+         
+ <div>
+  <pre><code> <!--
+  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> --> </code></pre>
+  <button onclick="navigator.clipboard.writeText('sudo vi /opt/tomcat9/webapps/manager/META-INF/context.xml')">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
+  </button>
+</div>
+
 ### Step 5: Configure Users
 - The last straw on this is to update users information from tomcat-users.xml
 
@@ -177,7 +186,7 @@ An example is of user setup is below:
  <user username="admin" password="admin123" roles="manager-gui, manager-script, manager-jmx, manager-status"/>
  <user username="Manager1" password="manager123" roles="manager-gui, manager-script"/>
  <user username="tomcat" password="s3cret" roles="manager-gui"/>
-------------------------------------------------------------------------------------------------------------------------------
+
 ### Step 6: Run Tomcat on GUI is you 
 #Restart serivce [you may run tomcatdown and then tomcatup] then login to tomcat application from your browser [http://ip_address:port_Number] and then to the Manager GUI. Ensure you open the assigned Tomcat port in the AWS Tomcat server then you are good to go.
 
