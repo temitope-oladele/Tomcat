@@ -17,7 +17,6 @@ This contains Tomcat Installation and Configuration on Linux RedHat Server
   <pre><code>java -version</code></pre>
   <button onclick="navigator.clipboard.writeText('java -version')">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
-    Copy
   </button>
 </div>
  
