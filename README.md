@@ -1,8 +1,8 @@
 # Tomcat
-This contains Tomcat Installation and Configuration on Linux RedHart Server
+This contains Tomcat Installation and Configuration on Linux RedHat Server
 
 # Step 1: Pre-requisites of the installation
-#1 EC2 Instance: Create RedHart Server on AWS with minimum of t2-micro. Tomcat is light weight and it can take that.
+#1 EC2 Instance: Create RedHat Server on AWS with minimum of t2-micro. Tomcat is light weight and it can take that.
 #2 Apache Tomcat requires Java to be install:
      .. $ sudo yum install java-1.8.0-openjdk-devel -y
  Confirm Java has been installed with:
@@ -25,7 +25,8 @@ sudo rm -rf apache-tomcat-9.0.73.zip
 
 sudo mv apache-tomcat-9.0.73 tomcat9
 
-# Step 3: Give executing permissions to tocat9 to allow catalina.sh, startup.sh and shutdown.sh and many more important functions to work or you can give the permission singly.
+# Step 3: Give executing permissions to tomcat
+#This is to allow catalina.sh, startup.sh and shutdown.sh and many more important functions to work or you can give the permission singly.
 
 chmod +x /opt/tomcat9
 
