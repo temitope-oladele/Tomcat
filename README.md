@@ -9,7 +9,14 @@ This contains Tomcat Installation and Configuration on Linux RedHat Server
      ..$ java -version
  ### Step 2: Tomcat Installation
  
- sudo yum install wget zip unzip -y
+  <div>
+  <pre><code>sudo yum install wget zip unzip -y</code></pre>
+  <button onclick="navigator.clipboard.writeText('sudo yum install wget zip unzip -y')">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h8v8H4zM12 4h8v8h-8zM4 12h8v8H4zM12 12h8v8h-8z"/></svg>
+    Copy
+  </button>
+</div>
+
  
  Download Tomcat packages to your working home directory and in this case, it opt that we use in our environment
  
