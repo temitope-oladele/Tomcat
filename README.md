@@ -153,10 +153,11 @@ comment the value ClassName field in context file to allow external access to op
   </button>
 </div>
 
+"
 <!--
   <Valve className="org.apache.catalina.valves.RemoteAddrValve"
          allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
-
+"
 ### Step 5: Configure Users
 - The last straw on this is to update users information from tomcat-users.xml
 
