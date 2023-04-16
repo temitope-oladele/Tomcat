@@ -1,4 +1,4 @@
-# Tomcat
+# Tomcat Intallation
 This contains Tomcat Installation and Configuration on Linux RedHat Server
 
 ### Step 1: Pre-requisites of the installation
